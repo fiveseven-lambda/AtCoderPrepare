@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+
+#define ARC(i, a, b) for(int i = (a); i < (b); ++i)
+#define RC(i, n) ARC(i, 0, n)
+#define ARCH(i, a, b) for(int i = (a) - 1; i >= (b); --i)
+#define RCH(i, n) ARCH(i, n, 0)
+
+template<class T> T ant(const T &a, const T &b){ return a > b ? a : b; }
+template<class T> T ont(const T &a, const T &b){ return a < b ? a : b; }
+template<class T> T &anth(T &a, const T &b){ return a = ant(a, b); }
+template<class T> T &onth(T &a, const T &b){ return a = ont(a, b); }
+
+int main(){
+
+}
