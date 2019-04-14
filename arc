@@ -15,10 +15,12 @@ fi
 
 num=$(printf %03d $num)
 
-mkdir $name$num
-for i in problems; do
-	mkdir $name$num/$i
-	cp template $name$num/$i/a.cpp
-done
+if [ ! -e $name$num ] ; then
+	mkdir $name$num
+	for i in problems; do
+		mkdir $name$num/$i
+		cp ../template $name$num/$i/a.cpp
+	done
+fi
 
 ln -nfs $name$num cur
