@@ -17,7 +17,7 @@ num=$(printf %03d $num)
 
 if [ ! -e $name$num ] ; then
 	mkdir $name$num
-	for i in problems; do
+	for i in $problems; do
 		mkdir $name$num/$i
 		cp ../template $name$num/$i/a.cpp
 	done
